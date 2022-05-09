@@ -3,12 +3,19 @@ import altair as alt
 import math
 import pandas as pd
 import streamlit as st
+from PIL import Image
 
 """
 # Welcome to Streamlit!
 
 Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
 
+Hello! This is a little test to see what I can do with this little sample app!!
+"""
+image = Image.open('sunrise.jpg')
+st.image(image, caption='Sunrise by the mountains')
+
+"""
 If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
 forums](https://discuss.streamlit.io).
 
