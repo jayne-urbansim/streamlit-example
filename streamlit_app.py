@@ -12,7 +12,7 @@ Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
 
 Hello! This is a little test to see what I can do with this little sample app!!
 """
-image = Image.open('https://placekitten.com/g/200/300')
+image = Image.open('img/cat.jpg')
 st.image(image, caption='Sunrise by the mountains')
 
 """
