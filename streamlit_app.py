@@ -37,13 +37,6 @@ with st.sidebar:
          "Select a Region",
          ("Vancouver", "Toronto", "Calgary")
 
-#---- Option menu
-
-# 1. as sidebar menu
-with st.sidebar:
-    selected = option_menu(None, ['Map Atlas','Scenarios','Run Manager','Visualizations','Support','My Account'], 
-     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow','question-circle','person'], menu_icon="building", default_index=1)
-    #selected
      
 # ----- Text -----
 
