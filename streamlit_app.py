@@ -36,6 +36,10 @@ with st.sidebar:
      add_selectbox = st.sidebar.selectbox(
          "Select a Region",
          ("Vancouver", "Toronto", "Calgary")
+          
+    selected = option_menu(None, ['Map Atlas','Scenarios','Run Manager','Visualizations','Support','My Account'], 
+     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow','question-circle','person'], menu_icon="building", default_index=1)
+    #selected
 
      
 # ----- Text -----
