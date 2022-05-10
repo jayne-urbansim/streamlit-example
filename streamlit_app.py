@@ -47,26 +47,6 @@ st.header('My Account')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # ----- Image -----
 
 #image = Image.open('img/noun-city-141548-00BBC3.png')
@@ -82,7 +62,7 @@ else:
 # ----- Sidebar Stuff -----
           
 with st.sidebar:
-     image = Image.open('img/cat.jpg')
+     image = Image.open('img/noun-city-141548-00BBC3.png')
      st.title('Scenario Modeler')   
      
 # Using object notation
