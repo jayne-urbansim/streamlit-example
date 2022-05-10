@@ -162,8 +162,8 @@ if st.button("Download"):
 
 # 1. as sidebar menu
 with st.sidebar:
-    selected = option_menu(None, ["Explore Maps",'Scenarios','Scenario Runs','Visualizations'], 
-     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow'], menu_icon="building", default_index=1)
+    selected = option_menu(None, ["Explore Maps",'Scenarios','Scenario Runs','Visualizations','Support'], 
+     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow','question-circle'], menu_icon="building", default_index=1)
     selected
 
 # 2. horizontal menu
