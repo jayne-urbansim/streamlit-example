@@ -27,7 +27,13 @@ st.set_page_config(
  )
 # ----- Text -----
 
-st.header('Playing around with the default components')
+st.header('Map Atlas')
+st.header('Scenarios')
+st.header('Run Manager')
+st.header('Visualizations')
+st.header('Support')
+st.header('My Account')
+
 
 # ----- Image -----
 
