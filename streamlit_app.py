@@ -27,6 +27,8 @@ if st.button('Say hello'):
 else:
      st.write('Goodbye')
 
+# Sidebar Stuff -----
+     
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
@@ -39,22 +41,25 @@ with st.sidebar:
         "Choose a shipping method",
         ("Standard (5-15 days)", "Express (2-5 days)")
     )     
-     
+
+# Container Stuff -----
+
 with st.container():
+    st.header("This is a grid of images")
     st.write("This is inside the container")
 
     col1, col2, col3 = st.columns(3)
 
     with col1:
-          st.header("A cat")
+          st.subheader("A cat")
           st.image("https://static.streamlit.io/examples/cat.jpg")
 
     with col2:
-          st.header("A dog")
+          st.subheader("A dog")
           st.image("https://static.streamlit.io/examples/dog.jpg")
 
     with col3:
-          st.header("An owl")
+          st.subheader("An owl")
           st.image("https://static.streamlit.io/examples/owl.jpg")
 
 with st.container():
@@ -63,15 +68,15 @@ with st.container():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-          st.header("A cat")
+          st.subheader("A cat")
           st.image("https://static.streamlit.io/examples/cat.jpg")
 
     with col2:
-          st.header("A dog")
+          st.subheader("A dog")
           st.image("https://static.streamlit.io/examples/dog.jpg")
 
     with col3:
-          st.header("An owl")
+          st.subheader("An owl")
           st.image("https://static.streamlit.io/examples/owl.jpg")
 
           
