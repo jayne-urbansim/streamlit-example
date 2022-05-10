@@ -32,10 +32,10 @@ with st.sidebar:
      #image = Image.open('img/cat.jpg')
      st.title('Scenario Modeler')   
      
-# Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "Select a Region",
-    ("Vancouver", "Toronto", "Calgary")
+     # Using object notation
+     add_selectbox = st.sidebar.selectbox(
+         "Select a Region",
+         ("Vancouver", "Toronto", "Calgary")
 
 #---- Option menu
 
