@@ -120,5 +120,5 @@ with st.expander("See explanation"):
      
 # ---- Components Test -----
 
-#df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv')
-#AgGrid(df)
+df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv')
+AgGrid(df)
