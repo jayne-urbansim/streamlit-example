@@ -24,7 +24,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 if st.button('Say hello'):
      st.write('Why hello there')
- else:
+else:
      st.write('Goodbye')
 
 with st.echo(code_location='below'):
