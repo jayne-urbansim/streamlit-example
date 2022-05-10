@@ -4,7 +4,7 @@ import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
-#from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 #import pandas as pd
 
 # ---- Page Configuration -----
