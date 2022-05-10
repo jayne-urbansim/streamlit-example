@@ -16,9 +16,7 @@ st.set_page_config(
  )
 # ----- Text -----
 
-👀
-st.title('Streamlit feature sandbox')
-st.subheader('Playing around with the default components')
+st.Header('Playing around with the default components')
 
 # ----- Image -----
 
@@ -33,6 +31,9 @@ else:
      st.write('Goodbye')
 
 # ----- Sidebar Stuff -----
+          
+with st.sidebar:
+    st.title('Streamlit feature sandbox')    
      
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
