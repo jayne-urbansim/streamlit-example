@@ -164,12 +164,6 @@ if st.button("Download"):
 with st.sidebar:
     selected = option_menu(None, ["Explore Maps",'Scenarios','Scenario Runs','Visualizations'], 
      icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow'], menu_icon="building", default_index=1),
-     styles={
-        "container": {"padding": "0!important", "background-color": "#fafafa"},
-        "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "green"},
-     }
     selected
 
 # 2. horizontal menu
