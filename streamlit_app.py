@@ -28,11 +28,35 @@ st.set_page_config(
 # ----- Text -----
 
 st.header('Map Atlas')
+
+components.iframe("https://docs.streamlit.io/en/latest")
+
 st.header('Scenarios')
 st.header('Run Manager')
 st.header('Visualizations')
 st.header('Support')
 st.header('My Account')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # ----- Image -----
