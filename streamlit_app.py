@@ -16,7 +16,7 @@ st.set_page_config(
  )
 # ----- Text -----
 
-st.markdown(:eyes:)
+👀
 st.title('Streamlit feature sandbox')
 st.subheader('Playing around with the default components')
 
