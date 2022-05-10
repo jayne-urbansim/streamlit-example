@@ -179,7 +179,7 @@ selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'],
     styles={
         "container": {"background-color": "#ffffff"},
         "icon": {"color": "#6941C6", "font-size": "32px"}, 
-        "nav-link": {"font-size": "16px", "--hover-color": "#F9F5FF"},
+        "nav-link": {"font-size": "32px", "--hover-color": "#F9F5FF"},
         "nav-link-selected": {"color": "#ffffff","background-color": "#42307D"},
     }
 )
