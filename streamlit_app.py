@@ -12,6 +12,8 @@ from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
 
 from streamlit_option_menu import option_menu
+import streamlit.components.v1 as components
+
 
 
 #import pandas as pd
