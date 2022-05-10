@@ -5,6 +5,15 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
+# ---- Page Configuration -----
+
+st.set_page_config(
+     page_title="Ex-stream-ly Cool App",
+     page_icon="🧊",
+     layout="wide",
+     initial_sidebar_state="expanded",
+
+ )
 # ----- Text -----
 
 st.title('Streamlit feature sandbox')
