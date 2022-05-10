@@ -26,6 +26,17 @@ st.set_page_config(
 
  )
 
+# ----- Sidebar Stuff -----
+          
+with st.sidebar:
+     #image = Image.open('img/cat.jpg')
+     st.title('Scenario Modeler')   
+     
+# Using object notation
+add_selectbox = st.sidebar.selectbox(
+    "Select a Region",
+    ("Vancouver", "Toronto", "Calgary")
+
 #---- Option menu
 
 # 1. as sidebar menu
@@ -69,17 +80,6 @@ if st.button('Say hello'):
 else:
      st.write('Goodbye')
 
-# ----- Sidebar Stuff -----
-          
-with st.sidebar:
-     #image = Image.open('img/cat.jpg')
-     st.title('Scenario Modeler')   
-     
-# Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "Region",
-    ("Vancouver", "Toronto", "Calgary")
-)
 
 # Using "with" notation
 #with st.sidebar:
