@@ -31,7 +31,7 @@ st.set_page_config(
 
 st.header('Map Atlas')
 
-components.iframe("https://docs.streamlit.io/en/latest")
+components.iframe("https://api.mapbox.com/styles/v1/jayne-urbansim/cl2v5x0hi002415ld4uhltc6z.html?title=view&access_token=pk.eyJ1IjoiamF5bmUtdXJiYW5zaW0iLCJhIjoiY2wydGV5aTRiMDF2ODNjcXZ6dHJ1cWRyYiJ9.RLM3qCHCGm7qJ00RxBLRCQ&zoomwheel=true&fresh=true#12.88/33.97365/-118.39509")
 
 st.header('Scenarios')
 st.header('Run Manager')
