@@ -139,7 +139,7 @@ def load_lottieurl(url: str):
     return r.json()
 
 
-lottie_url_hello = "https://assets5.lottiefiles.com/packages/lf20_V9t630.json"
+lottie_url_hello = "https://assets9.lottiefiles.com/packages/lf20_ff1eftyp.json"
 lottie_url_download = "https://assets4.lottiefiles.com/private_files/lf30_t26law.json"
 lottie_hello = load_lottieurl(lottie_url_hello)
 lottie_download = load_lottieurl(lottie_url_download)
