@@ -4,6 +4,8 @@ import math
 import pandas as pd
 import streamlit as st
 from PIL import Image
+from st_aggrid import AgGrid
+import pandas as pd
 
 # ---- Page Configuration -----
 
@@ -20,8 +22,8 @@ st.header('Playing around with the default components')
 
 # ----- Image -----
 
-image = Image.open('img/cat.jpg')
-st.image(image, caption='This is a cute kitten')
+#image = Image.open('img/cat.jpg')
+#st.image(image, caption='This is a cute kitten')
 
 # ----- Buttons -----
 
@@ -115,3 +117,8 @@ with st.expander("See explanation"):
          st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
              .mark_circle(color='#0068c9', opacity=0.5)
              .encode(x='x:Q', y='y:Q'))
+     
+# ---- Components Test -----
+
+df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv')
+AgGrid(df)
