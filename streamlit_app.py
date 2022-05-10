@@ -96,6 +96,9 @@ with st.container():
     with col3:
           st.subheader("An owl")
           st.image("https://static.streamlit.io/examples/owl.jpg")
+          with st.expander("See explanation"):
+               st.image("https://static.streamlit.io/examples/owl.jpg")
+
 
           
           
