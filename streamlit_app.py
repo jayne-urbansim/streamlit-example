@@ -25,9 +25,37 @@ st.set_page_config(
      initial_sidebar_state="expanded",
 
  )
+
+#---- Option menu
+
+# 1. as sidebar menu
+with st.sidebar:
+    selected = option_menu(None, ['Map Atlas','Scenarios','Run Manager','Visualizations','Support','My Account'], 
+     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow','question-circle','person'], menu_icon="building", default_index=1)
+    #selected
+     
 # ----- Text -----
 
-st.header('Playing around with the default components')
+st.header('Map Atlas')
+
+# 2. horizontal menu
+selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal")
+selected2
+
+# 3. CSS style definitions
+selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal",
+    styles={
+        "container": {"background-color": "#ffffff"},
+        "icon": {"color": "#6941C6", "font-size": "24px"}, 
+        "nav-link": {"font-size": "24px", "--hover-color": "#F9F5FF"},
+    }
+)
+
+
 
 # ----- Image -----
 
@@ -162,27 +190,4 @@ if st.button("Download"):
         time.sleep(5)
     st.balloons()
 
-# Option menu
 
-# 1. as sidebar menu
-with st.sidebar:
-    selected = option_menu(None, ['Map Atlas','Scenarios','Run Manager','Visualizations','Support','My Account'], 
-     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow','question-circle','person'], menu_icon="building", default_index=1)
-    selected
-
-# 2. horizontal menu
-selected2 = option_menu(None, ["Home", "Upload", "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    menu_icon="cast", default_index=0, orientation="horizontal")
-selected2
-
-# 3. CSS style definitions
-selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'], 
-    icons=['house', 'cloud-upload', "list-task", 'gear'], 
-    menu_icon="cast", default_index=0, orientation="horizontal",
-    styles={
-        "container": {"background-color": "#ffffff"},
-        "icon": {"color": "#6941C6", "font-size": "24px"}, 
-        "nav-link": {"font-size": "24px", "--hover-color": "#F9F5FF"},
-    }
-)
