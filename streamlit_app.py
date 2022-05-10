@@ -36,6 +36,7 @@ components.html(
      """
      <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/jayne-urbansim/cl2v5x0hi002415ld4uhltc6z.html?title=false&access_token=pk.eyJ1IjoiamF5bmUtdXJiYW5zaW0iLCJhIjoiY2wydGV5aTRiMDF2ODNjcXZ6dHJ1cWRyYiJ9.RLM3qCHCGm7qJ00RxBLRCQ&zoomwheel=false#12.88/33.97365/-118.39509" title="Monochrome-copy" style="border:none;"></iframe>
      """
+     height=400,
 )
 
 st.header('Scenarios')
