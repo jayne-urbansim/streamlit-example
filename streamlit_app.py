@@ -16,7 +16,7 @@ st.set_page_config(
  )
 # ----- Text -----
 
-st.Header('Playing around with the default components')
+st.header('Playing around with the default components')
 
 # ----- Image -----
 
