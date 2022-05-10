@@ -44,8 +44,9 @@ else:
 # ----- Sidebar Stuff -----
           
 with st.sidebar:
-    st.title('Scenario Modeler')   
-    st.header('by UrbanSim')
+     image = Image.open('img/cat.jpg')
+     st.image(image, caption='This is a cute kitten')
+     st.title('Scenario Modeler')   
      
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
