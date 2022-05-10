@@ -44,7 +44,8 @@ else:
 # ----- Sidebar Stuff -----
           
 with st.sidebar:
-    st.title('Streamlit feature sandbox')    
+    st.title('Scenario Modeler')   
+    st.header('by UrbanSim')
      
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
@@ -162,8 +163,8 @@ if st.button("Download"):
 
 # 1. as sidebar menu
 with st.sidebar:
-    selected = option_menu(None, ["Map Atlas",'Scenarios','Run Manager','Visualizations','Support'], 
-     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow','question-circle'], menu_icon="building", default_index=1)
+    selected = option_menu(None, ["Map Atlas",'Scenarios','Run Manager','Visualizations','Support','My Account'], 
+     icons=['geo-alt', 'pencil-square', 'card-checklist', 'graph-up-arrow','question-circle','person'], menu_icon="building", default_index=1)
     selected
 
 # 2. horizontal menu
