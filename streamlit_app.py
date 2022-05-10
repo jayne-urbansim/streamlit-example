@@ -126,6 +126,9 @@ with st.expander("See explanation"):
      
 # ---- Components Test -----
 
+st.header('Playing around with the community components')
+
+
 df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/airline-safety/airline-safety.csv')
 AgGrid(df)
 
