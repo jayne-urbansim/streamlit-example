@@ -5,29 +5,24 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
-"""
-# Welcome to Streamlit!
+# ----- Text -----
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+st.title('Streamlit feature sandbox')
+st.subheader('Playing around with the default components')
 
-Hello! This is a little test to see what I can do with this little sample app!!
-"""
+# ----- Image -----
+
 image = Image.open('img/cat.jpg')
 st.image(image, caption='This is a cute kitten')
 
-"""
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
-"""
+# ----- Buttons -----
 
 if st.button('Say hello'):
      st.write('Why hello there')
 else:
      st.write('Goodbye')
 
-# Sidebar Stuff -----
+# ----- Sidebar Stuff -----
      
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
@@ -35,16 +30,14 @@ add_selectbox = st.sidebar.selectbox(
     ("Email", "Home phone", "Mobile phone")
 )
 
-with st.expander("Shipping"):
+# Using "with" notation
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )     
 
-     # Using "with" notation
-     with st.sidebar:
-         add_radio = st.radio(
-             "Choose a shipping method",
-             ("Standard (5-15 days)", "Express (2-5 days)")
-         )     
-
-# Container Stuff -----
+# ----- Container Stuff -----
 
 with st.container():
     st.header("This is a grid of images")
@@ -85,6 +78,7 @@ with st.container():
           
 st.write("This is outside the container")
 
+# ----- Expander Stuff -----
 
 with st.expander("See explanation"):
 
