@@ -177,9 +177,9 @@ selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'],
     icons=['house', 'cloud-upload', "list-task", 'gear'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
-        "container": {"padding": "0!important", "background-color": "#ffffff"},
+        "container": {"background-color": "#ffffff"},
         "icon": {"color": "#6941C6", "font-size": "25px"}, 
         "nav-link": {"font-size": "16px", "--hover-color": "#F9F5FF"},
-        "nav-link-selected": {"color": "#6941C6","background-color": "#DAD9DE"},
+        "nav-link-selected": {"color": "#ffffff","background-color": "#6941C6"},
     }
 )
