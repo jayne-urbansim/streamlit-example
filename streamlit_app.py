@@ -14,6 +14,7 @@ from streamlit_lottie import st_lottie_spinner
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
+from streamlit_elements import elements, mui, html
 
 
 #import pandas as pd
@@ -201,3 +202,25 @@ selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'],
         "nav-link": {"font-size": "24px", "--hover-color": "#F9F5FF"},
     }
 )
+# ---- Elements
+
+with elements("new_element"):
+     mui.Typography("Hello world")
+
+with elements("multiple_children"):
+     mui.Button(
+             mui.icon.EmojiPeople,
+             mui.icon.DoubleArrow,
+             "Button with multiple children"
+
+     with mui.Button:
+        mui.icon.EmojiPeople()
+        mui.icon.DoubleArrow()
+        mui.Typography("Button with multiple children")
+     
+with elements("nested_children"):
+     with mui.Paper:
+             with mui.Typography:
+                 html.p("Hello world")
+                 html.p("Goodbye world")     
+
