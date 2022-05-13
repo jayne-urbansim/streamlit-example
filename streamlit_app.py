@@ -40,6 +40,14 @@ components.html(
      height=900,
 )
 
+components.html(
+     """
+     <iframe width='100%' height='900px' src="https://cga-explorer.urbansim.com/draw.html"></iframe>
+     """,
+     height=900,
+)
+
+
 st.header('Scenarios')
 st.header('Run Manager')
 st.header('Visualizations')
