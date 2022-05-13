@@ -40,13 +40,6 @@ components.html(
      height=900,
 )
 
-components.html(
-     """
-     <iframe width='100%' height='900px' src="https://geojson.io/#map=14/33.9903/-118.3761"></iframe>
-     """,
-     height=900,
-)
-
 
 st.header('Scenarios')
 st.header('Run Manager')
