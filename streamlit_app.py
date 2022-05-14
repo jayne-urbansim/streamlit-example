@@ -40,13 +40,6 @@ components.html(
      height=900,
 )
 
-components.html(
-     """
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBleFHfHsXopt9mgb2IYMJq%2FStreamlit-Upgrade%3Fnode-id%3D3%253A1452" allowfullscreen></iframe>
-     """,
-     height=900,
-)
-
 
 st.header('Scenarios')
 st.header('Run Manager')
