@@ -56,7 +56,7 @@ st.header('My Account')
 
 # ----- Buttons -----
 
-if st.button('Say hello', help='tootip test'):
+if st.button('Say hello', help='This is a tootip test of some long text string that could provide an explination'):
      st.write('Why hello there')
 else:
      st.write('Goodbye')
@@ -64,7 +64,7 @@ else:
 # ----- Sidebar Stuff -----
           
 with st.sidebar:
-     image = Image.open('img/noun-city-141548-00BBC3.png')
+     image = Image.open('/img/noun-city-141548-00BBC3.png')
      st.title('Scenario Modeler')   
      
 # Using object notation
