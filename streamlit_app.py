@@ -64,7 +64,7 @@ else:
 # ----- Sidebar Stuff -----
           
 with st.sidebar:
-     image = Image.open('/img/noun-city-141548-00BBC3.png')
+     image = Image.open('img/noun-city-141548-00BBC3.png')
      st.title('Scenario Modeler')   
      
 # Using object notation
