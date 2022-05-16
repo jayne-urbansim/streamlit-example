@@ -56,7 +56,7 @@ st.header('My Account')
 
 # ----- Buttons -----
 
-if st.button('Say hello'):
+if st.button('Say hello', help='tootip test'):
      st.write('Why hello there')
 else:
      st.write('Goodbye')
