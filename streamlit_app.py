@@ -29,10 +29,9 @@ st.set_page_config(
 
  )
 # ----- Text -----
+st.header('Mapbox Experiments')
 
-st.header('Map Atlas')
-
-
+st.header('Map from Mapbox API')
 components.html(
      """
      <iframe width='100%' height='900px' src="https://api.mapbox.com/styles/v1/jayne-urbansim/cl2v5x0hi002415ld4uhltc6z.html?title=false&access_token=pk.eyJ1IjoiamF5bmUtdXJiYW5zaW0iLCJhIjoiY2wydGV5aTRiMDF2ODNjcXZ6dHJ1cWRyYiJ9.RLM3qCHCGm7qJ00RxBLRCQ&zoomwheel=false#12.88/33.97365/-118.39509" title="Monochrome-copy" style="border:none;"></iframe>
@@ -41,23 +40,24 @@ components.html(
 )
 
 st.header('Draw on the map')
-components.iframe("https://satin-odd-shield.glitch.me/", 
+components.iframe("https://satin-odd-shield.glitch.me/drawmap.html", 
 	height=900,
 )
 
 st.header('Change Color')
-components.iframe("https://sphenoid-probable-aerosteon.glitch.me/", 
+components.iframe("https://satin-odd-shield.glitch.me/changecolor.html", 
 	height=900,
 )
 
+st.header('Show or Hide Layers')
+components.iframe("https://satin-odd-shield.glitch.me/layerstest.html", 
+	height=900,
+)
 
-
-st.header('Scenarios')
-st.header('Run Manager')
-st.header('Visualizations')
-st.header('Support')
-st.header('My Account')
-
+st.header('Show Custom Image')
+components.iframe("https://satin-odd-shield.glitch.me/imagetest.html", 
+	height=900,
+)
 
 
 # ----- Image -----
