@@ -40,12 +40,7 @@ components.html(
      height=900,
 )
 
-components.html(
-     """
-     <iframe width='100%' height='900px' src="https://geojson.io/#map=2/20.0/0.0"></iframe>
-     """,
-     height=900,
-)
+components.iframe("https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-draw/", height=900,)
 
 
 st.header('Scenarios')
