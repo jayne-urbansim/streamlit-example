@@ -42,7 +42,7 @@ components.html(
 
 components.html(
      """
-     <iframe width='100%' height='900px' src="https://modelmywatershed.org/draw"></iframe>
+     <iframe width='100%' height='900px' src="https://geojson.io/#map=2/20.0/0.0"></iframe>
      """,
      height=900,
 )
