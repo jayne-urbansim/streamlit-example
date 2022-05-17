@@ -40,9 +40,16 @@ components.html(
      height=900,
 )
 
+st.header('Draw on the map')
 components.iframe("https://satin-odd-shield.glitch.me/", 
 	height=900,
 )
+
+st.header('Change Color')
+components.iframe("https://sphenoid-probable-aerosteon.glitch.me/", 
+	height=900,
+)
+
 
 
 st.header('Scenarios')
