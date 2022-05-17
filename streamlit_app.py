@@ -40,6 +40,13 @@ components.html(
      height=900,
 )
 
+components.html(
+     """
+     <iframe width='100%' height='900px' src="https://nyc311.app/#12.5/40.70146/-73.99361"></iframe>
+     """,
+     height=900,
+)
+
 
 st.header('Scenarios')
 st.header('Run Manager')
