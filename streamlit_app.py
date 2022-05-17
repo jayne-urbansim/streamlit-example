@@ -31,7 +31,7 @@ st.set_page_config(
 # ----- Text -----
 st.header('Mapbox Experiments')
 
-st.header('Map from Mapbox API')
+st.subheader('Map from Mapbox API')
 components.html(
      """
      <iframe width='100%' height='900px' src="https://api.mapbox.com/styles/v1/jayne-urbansim/cl2v5x0hi002415ld4uhltc6z.html?title=false&access_token=pk.eyJ1IjoiamF5bmUtdXJiYW5zaW0iLCJhIjoiY2wydGV5aTRiMDF2ODNjcXZ6dHJ1cWRyYiJ9.RLM3qCHCGm7qJ00RxBLRCQ&zoomwheel=false#12.88/33.97365/-118.39509" title="Monochrome-copy" style="border:none;"></iframe>
@@ -39,22 +39,22 @@ components.html(
      height=900,
 )
 
-st.header('Draw on the map')
+st.subheader('Draw on the custom map')
 components.iframe("https://satin-odd-shield.glitch.me/drawmap.html", 
 	height=900,
 )
 
-st.header('Change Color')
+st.subheader('Change Color')
 components.iframe("https://satin-odd-shield.glitch.me/changecolor.html", 
 	height=900,
 )
 
-st.header('Show or Hide Layers')
+st.subheader('Show or Hide Layers')
 components.iframe("https://satin-odd-shield.glitch.me/layerstest.html", 
 	height=900,
 )
 
-st.header('Show Custom Image')
+st.subheader('Show Custom Image')
 components.iframe("https://satin-odd-shield.glitch.me/imagetest.html", 
 	height=900,
 )
