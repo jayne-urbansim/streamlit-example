@@ -137,12 +137,12 @@ with st.expander("See explanation"):
 	st.checkbox('this is an optional thing')
 	genre = st.radio(
      		"What's your favorite movie genre",
-     		('Comedy', 'Drama', 'Documentary'))
+    		('Comedy', 'Drama', 'Documentary'))
 
 	if genre == 'Comedy':
-     		st.write('You selected comedy.')
- 	else:
-    		st.write("You didn't select comedy.")
+    		st.write('You selected comedy.')
+ 		else:
+     			st.write("You didn't select comedy.")
 
 # Sample code from the demo
     
