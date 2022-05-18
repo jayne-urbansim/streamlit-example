@@ -14,6 +14,9 @@ from streamlit_lottie import st_lottie_spinner
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
+from streamlit_elements import Elements
+
+
 #from streamlit_elements import elements, mui, html
 
 
@@ -214,24 +217,16 @@ selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'],
 )
 # ---- Elements
 
-# with elements("new_element"):
-#     mui.Typography("Hello world")
+mt = Elements()
 
-# with elements("multiple_children"):
-#     mui.Button(
-#             mui.icon.EmojiPeople,
-#             mui.icon.DoubleArrow,
-#             "Button with multiple children"
-#     )
+mt.button(
+"I am a button!", 
+target="_blank", 
+size="large", 
+variant="contained", 
+start_icon=mt.icons.add_box, 
+onclick="none", 
+style={"color":"#FFFFFF", "background":"#FF4B4B"}, 
+href="https://mui.com/components/buttons/")
 
-#     with mui.Button:
-#        mui.icon.EmojiPeople()
-#        mui.icon.DoubleArrow()
-#        mui.Typography("Button with multiple children")
-     
-#with elements("nested_children"):
-#     with mui.Paper:
-#             with mui.Typography:
-#                 html.p("Hello world")
-#                 html.p("Goodbye world")     
-
+mt.show(key = "399")
