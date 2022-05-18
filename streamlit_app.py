@@ -5,7 +5,6 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 from st_aggrid import AgGrid
-from streamlit_elements import Elements
 
 
 import time
@@ -213,16 +212,3 @@ selected3 = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'],
 )
 # ---- Elements
 
-mt = Elements()
-
-mt.button(
-"I am a button!", 
-target="_blank", 
-size="large", 
-variant="contained", 
-start_icon=mt.icons.add_box, 
-onclick="none", 
-style={"color":"#FFFFFF", "background":"#FF4B4B"}, 
-href="https://mui.com/components/buttons/")
-
-mt.show(key = "399")
