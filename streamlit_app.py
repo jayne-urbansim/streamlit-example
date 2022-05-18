@@ -139,10 +139,10 @@ with st.expander("See explanation"):
      		"What's your favorite movie genre",
      		('Comedy', 'Drama', 'Documentary'))
 
-if genre == 'Comedy':
-     st.write('You selected comedy.')
- else:
-     st.write("You didn't select comedy.")
+	if genre == 'Comedy':
+     		st.write('You selected comedy.')
+ 	else:
+    		st.write("You didn't select comedy.")
 
 # Sample code from the demo
     
