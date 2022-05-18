@@ -58,12 +58,6 @@ st.subheader('Show Custom Image')
 components.iframe("https://satin-odd-shield.glitch.me/imagetest.html", 
 	height=900,
 )
-
-st.subheader('Show Custom Image')
-components.iframe("https://geojson.io/#map=2/20.0/0.0", 
-	height=900,
-)
-
 # ----- Image -----
 
 #image = Image.open('img/noun-city-141548-00BBC3.png')
