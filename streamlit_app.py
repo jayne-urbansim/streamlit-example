@@ -5,6 +5,8 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 from st_aggrid import AgGrid
+from streamlit_elements import Elements
+
 
 import time
 import requests
@@ -14,13 +16,7 @@ from streamlit_lottie import st_lottie_spinner
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as components
 
-from streamlit_elements import Elements
 
-
-#from streamlit_elements import elements, mui, html
-
-
-#import pandas as pd
 
 # ---- Page Configuration -----
 
