@@ -135,12 +135,7 @@ st.write("This is outside the container")
 with st.expander("See explanation"):
 	st.checkbox('this is an optional thing')
 	st.checkbox('this is an optional thing')
-	add_radio = st.radio(
-		"Choose a shipping method",
-		("Standard (5-15 days)", "Express (2-5 days)")
-	)    
-
-
+	
 # Sample code from the demo
     
      with st.echo(code_location='below'):
