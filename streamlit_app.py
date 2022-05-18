@@ -6,7 +6,6 @@ import streamlit as st
 from PIL import Image
 from st_aggrid import AgGrid
 
-
 import time
 import requests
 from streamlit_lottie import st_lottie
