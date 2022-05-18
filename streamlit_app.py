@@ -135,14 +135,11 @@ st.write("This is outside the container")
 with st.expander("See explanation"):
 	st.checkbox('this is an optional thing')
 	st.checkbox('this is an optional thing')
-	genre = st.radio(
-     		"What's your favorite movie genre",
-    		('Comedy', 'Drama', 'Documentary'))
+	add_radio = st.radio(
+		"Choose a shipping method",
+		("Standard (5-15 days)", "Express (2-5 days)")
+	)    
 
-	if genre == 'Comedy':
-    		st.write('You selected comedy.')
- 		else:
-     			st.write("You didn't select comedy.")
 
 # Sample code from the demo
     
