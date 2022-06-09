@@ -143,22 +143,25 @@ st.write("This is outside the container")
 
 with st.expander("See explanation"):
 # added columns inside expander	
-    with st.container():
-    st.write("This is inside the container")
 
-    col1, col2, col3 = st.columns(3)
+	with st.container():
+	    st.header("This is a grid of images")
+	    st.write("This is inside the container")
 
-    with col1:
-          st.subheader("A cat")
-          st.image("https://static.streamlit.io/examples/cat.jpg")
+	    col1, col2, col3 = st.columns(3)
 
-    with col2:
-          st.subheader("A dog")
-          st.image("https://static.streamlit.io/examples/dog.jpg")
+	    with col1:
+		  st.subheader("A cat")
+		  st.image("https://static.streamlit.io/examples/cat.jpg")
 
-    with col3:
-          st.subheader("An owl")
-          st.image("https://static.streamlit.io/examples/owl.jpg")
+	    with col2:
+		  st.subheader("A dog")
+		  st.image("https://static.streamlit.io/examples/dog.jpg")
+
+	    with col3:
+		  st.subheader("An owl")
+		  st.image("https://static.streamlit.io/examples/owl.jpg")
+
 	
 # Sample code from the demo
     with st.echo(code_location='below'):
