@@ -74,7 +74,7 @@ components.iframe("https://satin-odd-shield.glitch.me/imagetest.html",
 
 # ----- Buttons -----
 
-if st.button('👀 Say hello', help='This is a tootip test'):
+if st.button('👀 Say hello', help='This is a tootip test', disabled=True):
      st.write('Why hello there')
 else:
      st.write('Goodbye')
