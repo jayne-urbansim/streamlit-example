@@ -129,12 +129,12 @@ with st.container():
         st.image("https://static.streamlit.io/examples/cat.jpg")
 
     with col2:
-          st.subheader("A dog")
-          st.image("https://static.streamlit.io/examples/dog.jpg")
+	st.subheader("A dog")
+        st.image("https://static.streamlit.io/examples/dog.jpg")
 
     with col3:
-          st.subheader("An owl")
-          st.image("https://static.streamlit.io/examples/owl.jpg")
+        st.subheader("An owl")
+        st.image("https://static.streamlit.io/examples/owl.jpg")
 
 with st.container():
     st.write("This is inside the container")
